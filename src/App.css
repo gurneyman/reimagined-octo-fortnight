@@ -1,0 +1,28 @@
+.App {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 768px;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.empty-state {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--purple);
+}
+
+@media screen and (min-width: 1024px) {
+  .App {
+    flex-direction: row;
+    max-width: 1600px;
+  }
+  .giphy-gallery,
+  .empty-state {
+    margin-top: 0;
+    margin-left: 4rem;
+    flex-grow: 1;
+  }
+}
+
